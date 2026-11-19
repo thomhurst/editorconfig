@@ -71,6 +71,8 @@ public sealed class NameCollector
 
 ## Enforcement limits
 
+Use [Curb](https://github.com/nullean/curb) for routine C# formatting and checks. Follow the [setup instructions](README.md#format-with-curb). Keep Roslyn build analysis enabled for semantic rules.
+
 The profile uses built-in Roslyn rules; it does not require StyleCop, ReSharper, or another analyzer package. Missing control-flow braces are errors. Other configured style violations are warnings.
 
 Roslyn's experimental `IDE2003` rule checks blank lines after blocks. It cannot identify logical groups or require all the member spacing described above. Agents and reviewers must apply those parts of this guide. Experimental rules may vary by SDK or editor and are not a complete build-time spacing check.
